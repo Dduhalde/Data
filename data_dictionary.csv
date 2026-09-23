@@ -1,0 +1,22 @@
+file_group,variable,description,units,source,notes
+dmc,datetime (index),Timestamp of the hourly observation,UTC,DMC,
+dmc,Temperatura (°C),Air temperature,°C,DMC,
+dmc,Humedad Relativa (%),Relative humidity,%,DMC,
+dmc,Presión (hPa),Atmospheric pressure,hPa,DMC,
+dmc,Lluvia (mm),Rainfall accumulated over the hour,mm,DMC,
+ngl_ztd,datetime (index),Timestamp of the hourly value,UTC,NGL,
+ngl_ztd,ZTD (mm),Zenith Total Delay,mm,NGL,
+consolidated,datetime (index),Timestamp (merged DMC/NGL),UTC,DMC + NGL,
+consolidated,Temperatura (°C),Air temperature,°C,DMC,
+consolidated,Humedad Relativa (%),Relative humidity,%,DMC,
+consolidated,Presión (hPa),Atmospheric pressure,hPa,DMC,
+consolidated,Lluvia (mm),Rainfall accumulated over the hour,mm,DMC,
+consolidated,PWV (mm),Precipitable Water Vapor derived from ZTD and surface meteorology,mm,Derived,See README Section 4
+era5,time,Valid time,UTC,ERA5,
+era5,latitude,Latitude of grid point,degrees_north,ERA5,
+era5,longitude,Longitude of grid point,degrees_east,ERA5,
+era5,t2m,2 metre temperature,K,ERA5,
+era5,d2m,2 metre dewpoint temperature,K,ERA5,
+era5,sp,Surface pressure,Pa,ERA5,
+era5,tp,Total precipitation accumulated over the previous hour,m,ERA5,
+era5,tcwv,Total column vertically-integrated water vapour,kg m-2,ERA5,Numerically equivalent to PWV in mm
