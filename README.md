@@ -26,6 +26,8 @@ It includes (i) hourly surface meteorological observations from 9 stations of th
 
 File naming: `<DMC code>.parquet`, `<GNSS code>.parquet`, `<DMC code>_<GNSS code>.parquet`
 
+In Zenodo, each data folder is provided as a separate zip archive (`01_raw_dmc.zip`, `01_raw_ngl.zip`, `01_raw_era5.zip`, `02_processed_consolidated.zip`). Extracting all archives into the same directory reproduces the structure shown above.
+
 ## 2. Stations
 
 Nine DMC–GNSS station pairs were used. Coordinates and metadata are in `stations.csv`.
